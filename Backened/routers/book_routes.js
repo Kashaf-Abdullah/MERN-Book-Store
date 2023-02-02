@@ -29,6 +29,7 @@ const booksController=require('../controllers/books_controller')
 router.get("/",booksController.getAllBooks)
 router.post("/",booksController.addBook)
 router.get("/:id",booksController.getById)  //http://localhost:5000/books/637bb5ecac258345063b4b4b(GET)
-router.put("/:id",booksController.updateBook)  //http://localhost:5000/books/637bb5ecac258345063b4b4b(PUT)
+router.put("/:id"
+,booksController.updateBook)  //http://localhost:5000/books/637bb5ecac258345063b4b4b(PUT)
 router.delete("/:id",booksController.deleteBook);
 module.exports=router;
